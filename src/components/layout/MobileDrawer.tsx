@@ -119,16 +119,16 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
           </nav>
 
           {/* Contact Info & Social */}
-          <div className="border-t border-glass-border px-6 py-6 space-y-4">
-            <div className="flex items-center gap-3 text-white/70">
-              <Phone className="w-4 h-4 text-accent" />
-              <a href={`tel:${COMPANY.phone[0]}`} className="text-sm hover:text-accent transition-colors">
+          <div className="border-t border-white/20 px-6 py-6 space-y-4">
+            <div className="flex items-center gap-3">
+              <Phone className="w-4 h-4" style={{ color: '#e07a5f' }} />
+              <a href={`tel:${COMPANY.phone[0]}`} className="text-sm hover:text-accent transition-colors" style={{ color: '#ffffff' }}>
                 {COMPANY.phone[0]}
               </a>
             </div>
-            <div className="flex items-center gap-3 text-white/70">
-              <Mail className="w-4 h-4 text-accent" />
-              <a href={`mailto:${COMPANY.email}`} className="text-sm hover:text-accent transition-colors">
+            <div className="flex items-center gap-3">
+              <Mail className="w-4 h-4" style={{ color: '#e07a5f' }} />
+              <a href={`mailto:${COMPANY.email}`} className="text-sm hover:text-accent transition-colors" style={{ color: '#ffffff' }}>
                 {COMPANY.email}
               </a>
             </div>
@@ -139,7 +139,8 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
                 href={COMPANY.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-accent/20 hover:text-accent transition-colors"
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-white/15 hover:bg-accent/30 transition-colors"
+                style={{ color: '#ffffff' }}
               >
                 <InstagramIcon />
               </a>
@@ -147,7 +148,8 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
                 href={COMPANY.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-accent/20 hover:text-accent transition-colors"
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-white/15 hover:bg-accent/30 transition-colors"
+                style={{ color: '#ffffff' }}
               >
                 <FacebookIcon />
               </a>
@@ -155,7 +157,8 @@ export default function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
                 href={COMPANY.social.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 hover:bg-accent/20 hover:text-accent transition-colors"
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-white/15 hover:bg-accent/30 transition-colors"
+                style={{ color: '#ffffff' }}
               >
                 <YoutubeIcon />
               </a>
