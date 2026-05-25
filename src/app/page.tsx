@@ -78,64 +78,86 @@ export default function HomePage() {
   return (
     <main className="relative overflow-hidden" style={{ margin: 0 }}>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ margin: 0 }}>
+      <section
+        className="relative flex items-center justify-center overflow-hidden"
+        style={{ margin: 0, minHeight: '100dvh' }}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         {/* Carousel Background */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="flex transition-transform duration-700 ease-out h-full" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
             {heroImages.map((image, index) => (
               <div
                 key={index}
-                className="w-full h-screen flex-shrink-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${image})` }}
+                className="w-full flex-shrink-0 bg-cover bg-center"
+                style={{ backgroundImage: `url(${image})`, height: '100dvh' }}
               />
             ))}
           </div>
-          <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/55 to-black/25" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
         </div>
 
-        {/* Touch & Swipe Support */}
-       
-
-        {/* Dots Navigation */}
-        
-
         {/* Hero Content */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="text-center">
-            {/* Badge - No Animation */}
-            <div className="inline-block mb-6 px-6 py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
-              <span className="text-base font-semibold" style={{ color: '#ffffff' }}>
-                25+ Years of Excellence
-              </span>
-            </div>
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <div className="text-center flex flex-col items-center justify-center">
+            <span
+              className="inline-block mb-4 px-4 py-2 text-xs sm:text-sm font-semibold tracking-wide uppercase rounded-full"
+              style={{ color: '#fff', background: 'rgba(207, 148, 97, 0.85)', border: 'none' }}
+            >
+              25+ Years of Excellence
+            </span>
 
-            <h1 className="font-sans text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" style={{ color: '#ffffff', textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
+            <h1
+              className="font-sans text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-3 sm:mb-5"
+              style={{ color: '#ffffff', textShadow: '0 2px 12px rgba(0,0,0,0.6)' }}
+            >
               Crafting Tomorrow&apos;s Skylines with Vision & Excellence
             </h1>
-            <p className="font-sans text-xl sm:text-2xl md:text-3xl mb-6 leading-relaxed max-w-4xl mx-auto" style={{ color: 'rgba(255, 255, 255, 0.95)' }}>
+
+            <p
+              className="font-sans text-lg sm:text-2xl md:text-3xl mb-3 sm:mb-5 leading-snug max-w-4xl"
+              style={{ color: 'rgba(255,255,255,0.95)' }}
+            >
               Premium Commercial Spaces in Gujarat
             </p>
-            <p className="font-sans text-base sm:text-lg md:text-xl mb-10 leading-relaxed max-w-3xl mx-auto" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
+
+            <p
+              className="font-sans text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed max-w-2xl"
+              style={{ color: 'rgba(255,255,255,0.85)' }}
+            >
               From Vapi to Ahmedabad, we create spaces that hold meaning, value, and purpose. Transforming visions into landmark developments across Gujarat and beyond.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center ">
+            <div className="flex flex-row gap-3 sm:gap-4">
               <Link
                 href="/projects"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold bg-[#cf9461] hover:bg-[#b8845a] rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
-                style={{ color: '#ffffff' }}
+                className="inline-flex items-center justify-center gap-2 px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                style={{ background: '#cf9461', color: '#fff' }}
               >
-                Explore Projects <ArrowRight className="w-5 h-5" />
+                Explore Projects <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 href="/about"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-semibold bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full border border-white/30 transition-all duration-300"
-                style={{ color: '#ffffff' }}
+                className="inline-flex items-center justify-center gap-2 px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold rounded-full transition-all duration-300 backdrop-blur-sm"
+                style={{ background: 'rgba(255,255,255,0.15)', color: '#fff', border: '1px solid rgba(255,255,255,0.3)' }}
               >
                 Discover Arth
               </Link>
             </div>
           </div>
+        </div>
+
+        {/* Dots */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+          {heroImages.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrentSlide(i)}
+              className={`w-2.5 h-2.5 rounded-full transition-all ${i === currentSlide ? 'bg-white scale-125' : 'bg-white/40'}`}
+            />
+          ))}
         </div>
       </section>
 
