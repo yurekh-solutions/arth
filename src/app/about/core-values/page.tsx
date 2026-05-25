@@ -97,11 +97,11 @@ export default function CoreValuesPage() {
       >
         <div className="container-custom text-center">
           <ScrollReveal direction="scale">
-            <div className="max-w-3xl mx-auto text-white">
-              <p className=" text-white text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-white leading-relaxed">
+            <div className="max-w-3xl mx-auto">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold leading-relaxed" style={{ color: '#ffffff' }}>
                 &ldquo;Trust is built one project at a time. Transparency is how we keep it.&rdquo;
               </p>
-              <footer className="mt-6 text-accent font-medium text-lg">
+              <footer className="mt-6 font-medium text-lg" style={{ color: '#cf9461' }}>
                 — The Arth Group Philosophy
               </footer>
             </div>

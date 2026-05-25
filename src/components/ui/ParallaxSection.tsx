@@ -38,7 +38,7 @@ export default function ParallaxSection({
         />
       </motion.div>
       {overlay && (
-        <div className="absolute inset-0 bg-primary/80 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-black/60" />
       )}
       <div className="relative z-10">{children}</div>
     </section>
