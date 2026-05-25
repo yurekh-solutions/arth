@@ -170,7 +170,7 @@ export default function VisionMissionPage() {
         <div className="container-custom text-center">
           <ScrollReveal direction="scale">
             <blockquote className="max-w-3xl mx-auto">
-              <p className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-white leading-relaxed">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold leading-relaxed" style={{ color: '#ffffff' }}>
                 &ldquo;Spaces shape thinking, Thinking shapes outcomes&rdquo;
               </p>
             </blockquote>
