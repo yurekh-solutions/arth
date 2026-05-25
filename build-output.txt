@@ -1,0 +1,98 @@
+﻿Γû▓ Next.js 16.2.6 (Turbopack)
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 16.9s
+  Running TypeScript ...
+  Finished TypeScript in 9.9s ...
+  Collecting page data using 15 workers ...
+  Generating static pages using 15 workers (0/72) ...
+  Generating static pages using 15 workers (18/72) 
+  Generating static pages using 15 workers (36/72) 
+  Generating static pages using 15 workers (54/72) 
+Γ£ô Generating static pages using 15 workers (72/72) in 2.2s
+  Finalizing page optimization ...
+
+Route (app)
+Γöî Γùï /
+Γö£ Γùï /_not-found
+Γö£ Γùï /about
+Γö£ Γùï /about/core-values
+Γö£ Γùï /about/leadership
+Γö£ Γùï /about/our-story
+Γö£ Γùï /about/vision-mission
+Γö£ Γùï /awards
+Γö£ ΓùÅ /awards/[slug]
+Γöé Γö£ /awards/best-commercial-developer-2024
+Γöé Γö£ /awards/green-building-excellence-2024
+Γöé Γöö /awards/innovation-in-design-2023
+Γö£ Γùï /blog
+Γö£ ΓùÅ /blog/[slug]
+Γöé Γö£ /blog/future-of-commercial-real-estate-2025
+Γöé Γö£ /blog/smart-investment-guide-commercial-property
+Γöé Γö£ /blog/sustainable-buildings-green-future
+Γöé Γöö [+2 more paths]
+Γö£ Γùï /career
+Γö£ Γùï /career/life-at-arth
+Γö£ Γùï /career/openings
+Γö£ Γùï /case-studies
+Γö£ Γùï /contact
+Γö£ Γùï /cookie-policy
+Γö£ Γùï /downloads
+Γö£ Γùï /events
+Γö£ ΓùÅ /events/[slug]
+Γöé Γö£ /events/frontedge-park-grand-opening
+Γöé Γö£ /events/investor-meet-2025
+Γöé Γöö /events/sustainability-summit-2025
+Γö£ Γùï /faqs
+Γö£ Γùï /gallery
+Γö£ Γùï /innovation
+Γö£ Γùï /news
+Γö£ ΓùÅ /news/[slug]
+Γöé Γö£ /news/frontedge-park-milestone-completion
+Γöé Γö£ /news/vedant-connect-launch-kalyan
+Γöé Γöö /news/arth-group-sustainability-award
+Γö£ Γùï /partners
+Γö£ Γùï /privacy-policy
+Γö£ Γùï /projects
+Γö£ ΓùÅ /projects/[slug]
+Γöé Γö£ /projects/the-frontedge-park
+Γöé Γö£ /projects/vedant-connect
+Γöé Γö£ /projects/the-rise
+Γöé Γöö /projects/rivium
+Γö£ ΓùÅ /projects/[slug]/amenities
+Γöé Γö£ /projects/the-frontedge-park/amenities
+Γöé Γö£ /projects/vedant-connect/amenities
+Γöé Γö£ /projects/the-rise/amenities
+Γöé Γöö /projects/rivium/amenities
+Γö£ ΓùÅ /projects/[slug]/floor-plans
+Γöé Γö£ /projects/the-frontedge-park/floor-plans
+Γöé Γö£ /projects/vedant-connect/floor-plans
+Γöé Γö£ /projects/the-rise/floor-plans
+Γöé Γöö /projects/rivium/floor-plans
+Γö£ ΓùÅ /projects/[slug]/gallery
+Γöé Γö£ /projects/the-frontedge-park/gallery
+Γöé Γö£ /projects/vedant-connect/gallery
+Γöé Γö£ /projects/the-rise/gallery
+Γöé Γöö /projects/rivium/gallery
+Γö£ ΓùÅ /projects/[slug]/location
+Γöé Γö£ /projects/the-frontedge-park/location
+Γöé Γö£ /projects/vedant-connect/location
+Γöé Γö£ /projects/the-rise/location
+Γöé Γöö /projects/rivium/location
+Γö£ Γùï /services
+Γö£ Γùï /services/commercial-real-estate
+Γö£ Γùï /services/construction
+Γö£ Γùï /services/land-acquisition
+Γö£ Γùï /services/office-spaces
+Γö£ Γùï /services/project-management
+Γö£ Γùï /services/retail-hubs
+Γö£ Γùï /sustainability
+Γö£ Γùï /terms
+Γö£ Γùï /testimonials
+Γö£ Γùï /thank-you
+Γöö Γùï /videos
+
+
+Γùï  (Static)  prerendered as static content
+ΓùÅ  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
