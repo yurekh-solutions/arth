@@ -80,7 +80,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section
         className="relative flex items-center justify-center overflow-hidden"
-        style={{ margin: 0, minHeight: '100dvh' }}
+        style={{ margin: 0, minHeight: '70dvh', height: 'auto' }}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
@@ -92,7 +92,7 @@ export default function HomePage() {
               <div
                 key={index}
                 className="w-full flex-shrink-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${image})`, height: '100dvh' }}
+                style={{ backgroundImage: `url(${image})`, minHeight: '70dvh' }}
               />
             ))}
           </div>
@@ -100,47 +100,47 @@ export default function HomePage() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-12 sm:py-20">
           <div className="text-center flex flex-col items-center justify-center">
             <span
-              className="inline-block mb-4 px-4 py-2 text-xs sm:text-sm font-semibold tracking-wide uppercase rounded-full"
+              className="inline-block mb-3 px-4 py-1.5 text-xs sm:text-sm font-semibold tracking-wide uppercase rounded-full"
               style={{ color: '#fff', background: 'rgba(207, 148, 97, 0.85)', border: 'none' }}
             >
               25+ Years of Excellence
             </span>
 
             <h1
-              className="font-sans text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-3 sm:mb-5"
+              className="font-sans text-2xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-2 sm:mb-5"
               style={{ color: '#ffffff', textShadow: '0 2px 12px rgba(0,0,0,0.6)' }}
             >
               Crafting Tomorrow&apos;s Skylines with Vision & Excellence
             </h1>
 
             <p
-              className="font-sans text-lg sm:text-2xl md:text-3xl mb-3 sm:mb-5 leading-snug max-w-4xl"
+              className="font-sans text-base sm:text-2xl md:text-3xl mb-2 sm:mb-5 leading-snug max-w-4xl"
               style={{ color: 'rgba(255,255,255,0.95)' }}
             >
               Premium Commercial Spaces in Gujarat
             </p>
 
             <p
-              className="font-sans text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed max-w-2xl"
+              className="font-sans text-xs sm:text-base md:text-lg mb-4 sm:mb-8 leading-relaxed max-w-2xl"
               style={{ color: 'rgba(255,255,255,0.85)' }}
             >
               From Vapi to Ahmedabad, we create spaces that hold meaning, value, and purpose. Transforming visions into landmark developments across Gujarat and beyond.
             </p>
 
-            <div className="flex flex-row gap-3 sm:gap-4">
+            <div className="flex flex-row gap-2 sm:gap-4">
               <Link
                 href="/projects"
-                className="inline-flex items-center justify-center gap-2 px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center gap-1.5 px-4 sm:px-8 py-2.5 sm:py-4 text-xs sm:text-base font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
                 style={{ background: '#cf9461', color: '#fff' }}
               >
-                Explore Projects <ArrowRight className="w-4 h-4" />
+                Explore Projects <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               </Link>
               <Link
                 href="/about"
-                className="inline-flex items-center justify-center gap-2 px-5 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold rounded-full transition-all duration-300 backdrop-blur-sm"
+                className="inline-flex items-center justify-center gap-1.5 px-4 sm:px-8 py-2.5 sm:py-4 text-xs sm:text-base font-semibold rounded-full transition-all duration-300 backdrop-blur-sm"
                 style={{ background: 'rgba(255,255,255,0.15)', color: '#fff', border: '1px solid rgba(255,255,255,0.3)' }}
               >
                 Discover Arth
